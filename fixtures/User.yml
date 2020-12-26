@@ -1,0 +1,11 @@
+entity: User
+processor: ./processor/user.processor.ts
+items:
+  user{1..20}:
+    id: '($current)'
+    password: 'password($current)'
+    firstName: '{{name.firstName}}'
+    lastName: '{{name.lastName}}'
+    phoneNumber: '{{phone.phoneNumber}}'
+    email: 'test-user+($current)@panenco.com'
+    isAdmin: true

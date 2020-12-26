@@ -1,0 +1,11 @@
+entity: Metric
+processor: ./processor/entity.processor.ts
+items:
+  metric{1..10}:
+    id: '($current)'
+    value: 'Metric ($current)'
+    type: 'First type'
+  metric{11..20}:
+    id: '($current)'
+    value: 'Metric ($current)'
+    type: 'Second type'

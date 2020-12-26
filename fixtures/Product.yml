@@ -1,0 +1,19 @@
+entity: Product
+processor: ./processor/entity.processor.ts
+items:
+  product{1..10}:
+    id: '($current)'
+    name: '{{company.companyName}}'
+    active: true
+    userReporting: true
+    client: '@client($current)'
+  product{11..15}:
+    id: '($current)'
+    name: '{{company.companyName}}'
+    active: false
+    userReporting: false
+  product{16..20}:
+    id: '($current)'
+    name: '{{company.companyName}}'
+    active: true
+    userReporting: false

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    container_name: startup-postgres
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    volumes:
+      - db_data:/var/lib/postgresql
+    env_file:
+      - docker.env
+
+volumes:
+  db_data: ~

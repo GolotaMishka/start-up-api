@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "src/utils/definitions",
+      "node_modules/@types"
+    ],
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./buildcache/buildInfo.json",
+    "lib": [
+      "es2019",
+      "es6",
+      "dom",
+      "dom.iterable"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*",
+        "./tests/*"
+      ]
+    },
+    "assumeChangesOnlyAffectDirectDependencies": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "src/contracts/representations/.representation.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

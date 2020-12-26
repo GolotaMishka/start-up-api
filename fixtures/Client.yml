@@ -1,0 +1,6 @@
+entity: Client
+processor: ./processor/entity.processor.ts
+items:
+  client{1..10}:
+    id: '($current)'
+    name: 'Client ($current)'

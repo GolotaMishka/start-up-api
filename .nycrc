@@ -1,0 +1,28 @@
+{
+  "check-coverage": false,
+  "extension": [".ts"],
+  "include": ["**/*.js", "**/*.ts"],
+  "exclude": [
+    "coverage/**",
+    "node_modules/**",
+    "build/**",
+    "fixtures/**",
+    "tests/**",
+    "playground/**",
+    "scripts/**",
+    "src/app.ts",
+    "src/ormconfig.ts",
+    "src/entities/**",
+    "src/cliconfig.ts",
+    "src/contracts/representations/**",
+    "src/contracts/validators/**",
+    "**/*.d.ts",
+    "**/*.test.ts",
+    "**/utils/logging/**",
+    "**/mails/**",
+    "**/interfaces/**",
+    "**/migrations/**",
+    "**/integrators/**"
+  ],
+  "reporter": ["html", "text-summary", "json-summary"]
+}

@@ -1,0 +1,17 @@
+entity: ProductMetric
+processor: ./processor/entity.processor.ts
+items:
+  productMetric{1..10}:
+    id: '($current)'
+    value: 'ProductMetric ($current)'
+    timeStamp: '12/10/1990'
+    restricted: true
+    metric: '@metric($current)'
+    product: '@product($current)'
+  productMetric{11..20}:
+    id: '($current)'
+    value: 'ProductMetric ($current)'
+    timeStamp: '11/11/1998'
+    restricted: false
+    metric: '@metric($current)'
+    product: '@product($current)'
